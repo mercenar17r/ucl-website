@@ -1,12 +1,21 @@
+*{
+    box-sizing: border-box;
+
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
-  background-color: #0929c9;
+background-image: url(images/tip-bg.avif);
+background-size: cover;
 }
 ul {
   list-style-type: none;
  
   
+}
+svg {
+  background-color: white;
 }
 
 .nav-list{
@@ -21,4 +30,75 @@ ul {
 }
 .ucl-logo{
   height: 50px;
+ 
+}
+.news-post{
+  display: flex;
+  gap: 200px;
+}
+.post-description{
+     font-family: "Roboto Mono", monospace;
+     font-size: 30px;
+     color: white;
+}
+.post-img{
+  border-radius: 30px;
+  border: 5px solid black;
+  height: 700px;
+}
+.nav ul li:hover{
+  
+}
+
+
+.news-post{
+  
+}
+
+.other-news a {
+  font-size: 50px;
+  color: white;
+  display: flex;
+  text-decoration: none;
+}
+.other-news{
+  display: flex;
+  flex-direction: column;
+  background-color: #0c195f;
+  border-radius: 10px;
+  backdrop-filter: blur(500px);
+  margin-left: 250px;
+  margin-right: 50px;
+
+}
+.headlines{
+  display: flex;
+  
+}
+.headlines img{
+  height: 130px;
+  border-radius: 10px;
+  margin: 15px;
+}
+.headlines a {
+  padding: 30px;
+  font-size: 35px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.headlines-header{
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+.post-desc-container{
+  height: 500px;
+  border-radius: 10px;
+}
+.post-desc-container p{
+  text-align: center;
+  padding-top: 20px;
+ 
 }
