@@ -1,59 +1,81 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0
 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
-background-image: url(images/tip-bg.avif);
-background-size: cover;
+  background-image: url(images/tip-bg.avif);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto Mono", monospace;
+
 }
 ul {
   list-style-type: none;
  
   
 }
-svg {
-  background-color: white;
-}
 
 .nav-list{
   margin-top: 30px;
   display: flex;
-  gap: 70px;
+  flex-wrap: wrap;
+  gap: 25px;
   color: white;
-  font-size: 20px;
+  font-size: 1.5rem;
   cursor: pointer;
-   font-family: "Roboto Mono", monospace;
-  
 }
 .ucl-logo{
-  height: 50px;
+  height: 40px;
+  width: auto;
  
 }
 .news-post{
   display: flex;
-  gap: 200px;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .post-description{
-     font-family: "Roboto Mono", monospace;
-     font-size: 30px;
+    
+     font-size: 1.1rem;
      color: white;
+     text-align: center;
+     padding: 20px;
 }
 .post-img{
+  width: 100%;
+  max-width: 700px;
+  height: auto;
   border-radius: 30px;
   border: 5px solid black;
-  height: 700px;
+ 
+}
+.post-desc-container {
+    max-width: 700px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
 }
 
 
 .other-news a {
   font-size: 50px;
+  flex-direction: column;
+  background-color: #0c195fdd;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;   
   color: white;
   display: flex;
   text-decoration: none;
-}
+  }
 .other-news{
   display: flex;
   flex-direction: column;
@@ -66,32 +88,37 @@ svg {
 }
 .headlines{
   display: flex;
+  gap: 15px;
+  align-items: center;
   
 }
 .headlines img{
-  height: 130px;
+  height: 100px;
+  width: 100px;
   border-radius: 10px;
-  margin: 15px;
+  object-fit: cover;
 }
 .headlines a {
-  padding: 30px;
-  font-size: 35px;
-  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
 }
 
 .headlines-header{
-  color: white;
-  font-size: 45px;
-  text-align: center;
-  padding-bottom: 20px;
-  font-family: "Roboto Mono", monospace;
+   color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.post-desc-container{
-  height: 500px;
-  border-radius: 10px;
-}
-.post-desc-container p{
-  text-align: center;
-  padding-top: 20px;
- 
-}
+
+@media (max-width: 900px) {
+    .nav-list {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .post-description {
+        font-size: 1rem;
+    }
+  }
