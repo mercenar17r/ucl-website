@@ -26,7 +26,7 @@ ul {
   flex-wrap: wrap;
   gap: 25px;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 .ucl-logo{
@@ -121,4 +121,14 @@ ul {
     .post-description {
         font-size: 1rem;
     }
+  }
+
+
+  .scroll-btn{
+    margin-left: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-image: url(/images/tip-bg.avif)
   }
